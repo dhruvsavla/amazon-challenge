@@ -1,0 +1,30 @@
+[debug] [2023-11-01T17:42:54.725Z] ----------------------------------------------------------------------
+[debug] [2023-11-01T17:42:54.730Z] Command:       /Users/dhruvsavla/.nvm/versions/node/v16.20.0/bin/node /Users/dhruvsavla/.nvm/versions/node/v16.20.0/bin/firebase deploy --only functions
+[debug] [2023-11-01T17:42:54.731Z] CLI Version:   12.7.0
+[debug] [2023-11-01T17:42:54.731Z] Platform:      darwin
+[debug] [2023-11-01T17:42:54.732Z] Node Version:  v16.20.0
+[debug] [2023-11-01T17:42:54.752Z] Time:          Wed Nov 01 2023 10:42:54 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-11-01T17:42:54.753Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-01T17:42:54.884Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-01T17:42:54.885Z] > authorizing via signed-in user (sdhruv0405@gmail.com)
+[debug] [2023-11-01T17:42:54.885Z] [iam] checking project challenge-4cc94 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-11-01T17:42:54.908Z] > refreshing access token with scopes: []
+[debug] [2023-11-01T17:42:54.911Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-01T17:42:54.912Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-01T17:42:55.316Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-01T17:42:55.317Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-01T17:42:55.482Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-4cc94:testIamPermissions [none]
+[debug] [2023-11-01T17:42:55.483Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-4cc94:testIamPermissions x-goog-quota-user=projects/challenge-4cc94
+[debug] [2023-11-01T17:42:55.483Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-4cc94:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-11-01T17:42:55.648Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-4cc94:testIamPermissions 200
+[debug] [2023-11-01T17:42:55.648Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-4cc94:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-11-01T17:42:55.649Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/challenge-4cc94/serviceAccounts/challenge-4cc94@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-11-01T17:42:55.649Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/challenge-4cc94/serviceAccounts/challenge-4cc94@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-11-01T17:42:55.858Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/challenge-4cc94/serviceAccounts/challenge-4cc94@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-11-01T17:42:55.858Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/challenge-4cc94/serviceAccounts/challenge-4cc94@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'challenge-4cc94'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
